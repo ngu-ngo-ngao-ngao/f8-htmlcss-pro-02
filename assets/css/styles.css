@@ -548,3 +548,128 @@ a {
     height: 440px;
     border-radius: 20px;
 }
+/* Blog */
+.blog {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: var(--bg-color);
+}
+
+.blog-top {
+    text-align: center;
+}
+
+.blog-top .heading {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+}
+
+.blog-top .desc {
+    width: 448px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin: 16px auto 0;
+}
+
+.blog-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 0 30px;
+    overflow: hidden;
+}
+
+.blog-list .item {
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
+    border-radius: 16px;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: all ease 0.3s;
+}
+
+.blog-list .item:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.blog-list .thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.blog-list .body {
+    padding: 20px 20px 28px;
+}
+
+.blog-list .date {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 12px;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: var(--tertiary-color);
+}
+
+.blog-list .date::before {
+    content: "";
+    display: inline-block;
+    margin-right: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--secondary-color);
+}
+
+.blog-list .date::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: -27px;
+    bottom: 0;
+    height: 1px;
+    border-radius: 0.5px;
+    background: var(--tertiary-color);
+}
+
+.blog-list .title a {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--primary-color);
+}
+
+.blog-list .blog-btn {
+    margin-top: 12px;
+    font-size: 1.4rem;
+}
+
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.blog .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.blog .dot.active {
+    background: var(--secondary-color);
+    cursor: default;
+}
